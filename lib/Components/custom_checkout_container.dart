@@ -8,16 +8,19 @@ class CustomCheckOutContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      alignment: Alignment.center,
-      child: Text(
-        kCheckOutText,
-        style: kCheckOutButtonStyle,
-      ),
-      height: 80.0,
-      width: MediaQuery.of(context).size.width,
-      decoration: BoxDecoration(
-        color: Theme.of(context).accentColor,
+    return Center(
+      child: Container(
+        alignment: Alignment.center,
+        child: Text(
+          kCheckOutText,
+          style: kCheckOutButtonStyle,
+        ),
+        height: 40.0,
+        width: 300,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(15),
+          color: Theme.of(context).accentColor,
+        ),
       ),
     );
   }

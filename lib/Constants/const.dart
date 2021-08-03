@@ -17,7 +17,7 @@ const kProductPriceTextStyle =
 const kDividerLineColor = Color(0xFF999999);
 const kFinalDividerLineColor = Color(0xFFFFC107);
 const kCheckOutButtonStyle =
-    TextStyle(color: Colors.black, fontSize: 40.0, fontWeight: FontWeight.w900);
+    TextStyle(color: Colors.black, fontSize: 30.0, fontWeight: FontWeight.w500);
 
 const kTotalSumText = TextStyle(
     color: kFinalDividerLineColor, fontWeight: FontWeight.w900, fontSize: 20.0);

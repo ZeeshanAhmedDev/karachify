@@ -76,6 +76,9 @@ class CheckoutScreen extends StatelessWidget {
                   child: CustomCheckOutContainer(),
                 ),
               ),
+              SizedBox(
+                height: 10.0,
+              ),
             ],
           ),
         ),
