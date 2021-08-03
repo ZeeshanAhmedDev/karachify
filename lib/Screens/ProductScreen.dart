@@ -44,7 +44,7 @@ class _ProductScreenState extends State<ProductScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView.separated(
-        // physics: BouncingScrollPhysics(),
+        physics: BouncingScrollPhysics(),
         itemBuilder: (context, index) {
           return ListTile(
             leading: Image.asset(
