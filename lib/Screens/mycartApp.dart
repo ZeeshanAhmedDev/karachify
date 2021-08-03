@@ -103,28 +103,31 @@ class _MyCartAppState extends State<MyCartApp> {
             padding: const EdgeInsets.all(8.0),
             child: Material(
               color: Colors.transparent,
-              child: InkWell(
-                child: Badge(
-                  badgeContent: Text('$clicked'),
-                  child: Icon(Icons.shopping_cart),
-                  animationType: BadgeAnimationType.scale,
-                  badgeColor: Theme.of(context).accentColor,
-                  elevation: 0.5,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 18.0),
+                child: InkWell(
+                  child: Badge(
+                    badgeContent: Text('$clicked'),
+                    child: Icon(Icons.shopping_cart),
+                    animationType: BadgeAnimationType.scale,
+                    badgeColor: Theme.of(context).accentColor,
+                    elevation: 0.5,
+                  ),
+                  onTap: () {
+                    setState(
+                      () => Get.to(
+                        CheckoutScreen(cart, sum),
+                      ),
+                    );
+                  },
                 ),
-                onTap: () {
-                  setState(
-                    () => Get.to(
-                      CheckoutScreen(cart, sum),
-                    ),
-                  );
-                },
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(12.0),
-            child: Icon(CupertinoIcons.search),
-          ),
+          // Padding(
+          //   padding: const EdgeInsets.all(12.0),
+          //   child: Icon(CupertinoIcons.search),
+          // ),
         ],
         title: Text(kAppTitle),
       ),
